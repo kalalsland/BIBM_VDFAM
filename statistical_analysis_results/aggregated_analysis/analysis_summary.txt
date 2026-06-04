@@ -1,0 +1,28 @@
+============================================================
+STATISTICAL ANALYSIS SUMMARY
+============================================================
+
+Seeds analyzed: [39, 40, 41, 42]
+Total test set size: 544
+Positive samples: 176 (32.4%)
+Post-hoc calibration: Platt Scaling
+
+------------------------------------------------------------
+BOOTSTRAP CONFIDENCE INTERVALS (95% CI)
+------------------------------------------------------------
+AUC         : 0.8015 [0.7580, 0.8425]
+ACCURACY    : 0.7794 [0.7444, 0.8144]
+F1          : 0.6450 [0.5810, 0.7034]
+PRECISION   : 0.6728 [0.5955, 0.7453]
+RECALL      : 0.6193 [0.5449, 0.6897]
+
+------------------------------------------------------------
+CALIBRATION (After Platt Scaling)
+------------------------------------------------------------
+Brier Score : 0.1976
+ECE         : 0.0933
+Acceptable Brier score (0.15-0.25) | Good calibration (ECE 0.05-0.10)
+
+
+For detailed subgroup analysis, see subgroup_analysis/ directory
+For calibration plots, see calibration/ directory

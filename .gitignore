@@ -1,0 +1,110 @@
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 训练权重文件
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.weights
+*.pb
+*.onnx
+*.safetensors
+checkpoints/
+weights/
+models/checkpoints/
+saved_models/
+
+# 日志文件
+*.log
+logs/
+runs/
+tensorboard/
+lightning_logs/
+wandb/
+mlruns/
+
+# 训练输出图片和结果
+outputs/
+results/
+figures/
+plots/
+visualizations/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+!assets/*.png
+!assets/*.jpg
+!docs/*.png
+!docs/*.jpg
+!picture/*.png
+
+# 实验全部输出（含 seed 目录、权重等）
+experiments/
+
+# 数据集（如果不想上传大型数据集）
+data/raw/
+data/processed/
+data/datasets/
+*.csv
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# 编码后的特征数据含患者隐私，不上传
+data/encoded/*.xlsx
+data/encoded/*.xls
+
+# embeding 子目录下的所有特征/原始数据 Excel（患者隐私）
+embeding/**/*.xlsx
+embeding/**/*.xls
+embeding/**/*.csv
+
+# 实验全部输出（含 best_config.json、seed 目录等）
+experiments/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 环境
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
